@@ -1,0 +1,20 @@
+/* pages/huodong/huodong.wxss */
+#only{
+  width: 750rpx;
+  height: 1127rpx;
+}
+#only image{
+  width: 100%;
+  height: 100%;
+}
+#gongneng>view{
+  position: relative;
+}
+.grey{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(219,219,219,0.4);
+}

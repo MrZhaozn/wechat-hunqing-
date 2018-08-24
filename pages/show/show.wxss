@@ -1,0 +1,12 @@
+/* pages/show/show.wxss */
+.show{
+  width: 750rpx;
+  overflow: hidden;
+}
+.show image{
+  width: 750rpx;
+}
+image{
+  margin: 0;
+  padding: 0;
+}

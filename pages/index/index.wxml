@@ -1,0 +1,53 @@
+<!-- header top banner -->
+<view id='header'>
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='header_swiper'>
+  <block wx:for="{{imgUrls}}" class='header_swiper'>
+    <swiper-item class='header_swiper'>
+      <image src="{{item}}" class="slide-image header_swiper" />
+    </swiper-item>
+  </block>
+</swiper>
+</view>
+<!-- nav -->
+<view class='nav'>
+  <view bindtap='new'>
+    <view><image src='{{new}}'></image></view>
+    <view>最新客片</view>
+  </view>
+  <view bindtap='photo'>
+    <view><image src='{{photo}}'></image></view>
+    <view>样片赏析</view>
+  </view>
+  <view bindtap='home'>
+    <view><image src='{{home}}'></image></view>
+    <view>门店介绍</view>
+  </view>
+  <view>
+    <view bindtap='youhui'><image src='{{messages}}'></image></view>
+    <view>我的优惠</view>
+  </view>
+</view>
+<!-- br -->
+<view id='br'>
+  <image src='{{main}}'></image>
+</view>
+<!-- float -->
+<view id='photo'>
+    <view class='item' wx:for='{1,2}' bindtap='show'>
+      <view class='item_pic'><image src='{{item_pic}}'></image></view>
+      <view class='item_date'>{{item_date}}</view>
+      <view class='item_content'>{{item_content}}</view>
+    </view>
+</view>
+
+<!-- footer -->
+<view class='footer'>
+  <image src='{{footer_pic}}'></image>
+</view>
+<view id='margin'></view>
+<view id='gongneng'>
+  <view bindtap='call'><image src='{{call}}'></image></view>
+  <view bindtap='zaixian'><image src='{{zaixian}}'></image></view>
+  <view bindtap='huodong' bindtap='huodongyemian'><image src='{{huodong}}'></image></view>
+</view>

@@ -1,0 +1,12 @@
+/* pages/new/new.wxss */
+#header{
+  width: 750rpx;
+  height: 311rpx;
+}
+#header image{
+  width: 100%;
+  height: 100%;
+}
+#photo{
+  padding-bottom: 120rpx;
+}

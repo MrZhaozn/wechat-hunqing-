@@ -1,0 +1,10 @@
+<!--pages/huodong/huodong.wxml-->
+<view id='only'>
+  <image src='{{only_pic}}'></image>
+</view>
+
+<view id='gongneng'>
+  <view bindtap='call'><image src='{{call}}'></image></view>
+  <view bindtap='zaixian'><image src='{{zaixian}}'></image></view>
+  <view bindtap='huodong'><image src='{{huodong}}'></image><view class='grey'></view></view>
+</view>

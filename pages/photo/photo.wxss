@@ -1,0 +1,12 @@
+/* pages/photo/photo.wxss */
+#head{
+  width: 750rpx;
+  height: 243rpx;
+}
+#head image{
+  width: 100%;
+  height: 100%;
+}
+#photo{
+  padding-bottom: 100rpx;
+}

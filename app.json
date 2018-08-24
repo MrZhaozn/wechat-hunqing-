@@ -1,0 +1,18 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/new/new",
+    "pages/photo/photo",
+    "pages/home/home",
+    "pages/huodong/huodong",
+    "pages/show/show",
+    "pages/youhui/youhui",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#d5be8c",
+    "navigationBarTitleText": "婚纱摄影",
+    "navigationBarTextStyle":"black"
+  }
+}

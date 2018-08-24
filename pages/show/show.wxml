@@ -1,0 +1,4 @@
+<!--pages/show/show.wxml-->
+<view class='show'>
+  <image wx:for='{{show_pic}}' src='{{item.pic}}'></image>
+</view>

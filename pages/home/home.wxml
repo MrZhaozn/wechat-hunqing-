@@ -1,0 +1,35 @@
+<!-- head -->
+<view id='header'>
+  <image src='{{head}}'></image>
+</view>
+<view class='text'>
+  {{text_header}}
+</view>
+<view class='text two'>
+  {{text_style}}
+</view>
+<view class='text'>
+  {{text_content}}
+</view>
+<view id='center'>
+  <image src='{{center}}'></image>
+</view>
+<view class='text one'>
+  <view>{{address}}</view>
+  <view>{{phone}}</view>
+  <view>{{time}}</view>
+</view>
+
+
+<view id='footer'>
+  <image src='{{footer}}'></image>
+</view>
+<view id='margin'></view>
+
+
+
+<view id='gongneng'>
+  <view bindtap='call'><image src='{{call}}'></image></view>
+  <view bindtap='zaixian'><image src='{{zaixian}}'></image></view>
+  <view bindtap='huodong'><image src='{{huodong}}'></image></view>
+</view>

@@ -1,0 +1,36 @@
+#header{
+  width: 750rpx;
+  height: 180rpx;
+}
+#center{
+  width: 750rpx;
+  height: 312rpx;
+}
+#footer{
+  width: 750rpx;
+  height: 638rpx;
+}
+view image{
+  width: 100%;
+  height: 100%;
+}
+view{
+  font-family: '微软雅黑';
+  font-size: 19rpx;
+}
+.text{
+  width: 582rpx;
+  margin: 0 auto;
+  line-height: 25rpx;
+}
+.one view{
+  margin-bottom: 25rpx;
+  text-align:center;
+}
+.two{
+  margin: 20rpx auto;
+}
+#margin{
+  width: 750rpx;
+  height: 100rpx;
+}

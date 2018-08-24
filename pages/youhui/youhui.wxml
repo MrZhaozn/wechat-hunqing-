@@ -1,0 +1,90 @@
+<!--pages/youhui/youhui.wxml-->
+
+<view id='youhui'>
+  <view class='one {{canone}}' bindtap='can'>可用</view>
+  <view class='one {{cantone}}' bindtap='cant'>不可用</view>
+</view>
+<view class='main can' style='display:{{show}}'>
+  <view class='main_item' wx:for='{{can_list}}' style='display:{{can}};'>
+    <image src='{{can_bg}}'></image>
+    <view class='can_text'>
+      <view style='display:flex;'>
+        <view style='display:flex;padding:25rpx 0 0 40rpx;'>
+          <view style='font-weight:500;font-size:60rpx;color:#996c33'>
+          {{item.money}}
+          </view>
+          <view style='font-size:30rpx;color:#996c33;line-height:95rpx;margin-left:10rpx;'>
+          元
+          </view>
+          <view style='color:#996c33;font-size:20rpx;border:2rpx solid #996c33;border-radius:20rpx;width:60rpx;height:40rpx;margin:20rpx 0 0 30rpx;padding:5rpx 8rpx 0 10rpx;line-height:38rpx;'>
+          折扣劵
+          </view>
+        </view>
+      </view>
+      <view style='font-size:18rpx;margin:-15rpx 0 0 40rpx;color:grey;'>
+          使用条件：{{item.tiaojian}}
+      </view>
+      <view style='font-size:18rpx;margin:25rpx 0 0 40rpx;color:grey;'>
+        有效期截止：{{item.shijian}}
+      </view>
+      <view style='position:absolute;top:0;right:0;color:white;width:24%;height:100%;font-size:50rpx;text-align:center;line-height:70rpx;'>
+      <view style='padding-top:25rpx;'>
+        立即
+      </view>
+      <view>
+        使用
+      </view>
+    </view>
+    </view>
+    <view class='fixed' style='display:none;'>
+      <view>
+        <view class='juanma'>您的劵码为：</view>
+        <view class='num'>20202020202020</view>
+        <view class='tips'>温馨提示：消费时出示本卷码符合条件即可享受优惠。一次消费最多可享受一次同类别优惠。本卷码仅允许您本人使用。本卷码具有唯一性，是您参与优惠的凭证，请妥善保管好您的劵码。本卷码不可进行二次使用。丢失、遗忘、被他人获取恕本店概不负责。</view>
+        <view class='aikes'>X</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 不能使用 -->
+<view class='main' style='display:{{hidden}};'>
+  <view class='main_item' wx:for='{{cant_list}}' style='display:{{cant}};'>
+    <image src='{{cant_bg}}'></image>
+    <view class='can_text' style='background:rgba(236,236,236,0.4);'>
+      <view style='display:flex;'>
+        <view style='display:flex;padding:25rpx 0 0 40rpx;'>
+          <view style='font-weight:500;font-size:60rpx;color:#996c33'>
+          {{item.money}}
+          </view>
+          <view style='font-size:30rpx;color:#996c33;line-height:95rpx;margin-left:10rpx;'>
+          元
+          </view>
+          <view style='color:#996c33;font-size:20rpx;border:2rpx solid #996c33;border-radius:20rpx;width:60rpx;height:40rpx;margin:20rpx 0 0 30rpx;padding:5rpx 8rpx 0 10rpx;line-height:38rpx;'>
+          折扣劵
+          </view>
+        </view>
+      </view>
+      <view style='font-size:18rpx;margin:-15rpx 0 0 40rpx;color:grey;'>
+          使用条件：{{item.tiaojian}}
+      </view>
+      <view style='font-size:18rpx;margin:25rpx 0 0 40rpx;color:grey;'>
+        有效期截止：{{item.shijian}}
+      </view>
+      <view style='position:absolute;top:0;right:0;color:white;width:24%;height:100%;font-size:50rpx;text-align:center;line-height:70rpx;'>
+      <view style='padding-top:25rpx;'>
+        已
+      </view>
+      <view>
+        失效
+      </view>
+    </view>
+    </view>
+    <view class='fixed' style='display:none;'>
+      <view>
+        <view class='num'>您的劵码已失效</view>
+        <view class='aikes'>X</view>
+      </view>
+    </view>
+  </view>
+</view>

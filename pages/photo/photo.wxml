@@ -1,0 +1,24 @@
+<!-- header -->
+<view id='head'>
+  <image src='{{header_pic}}'>
+
+  </image>
+</view>
+
+<view id='photo'>
+    <view class='item' wx:for='{{list}}'>
+      <view class='item_pic'><image src='{{item.item_pic}}'></image></view>
+      <view class='item_date'>{{item.item_date}}</view>
+      <view class='item_content'>{{item.item_content}}</view>
+    </view>
+</view>
+
+
+
+
+
+<view id='gongneng'>
+  <view bindtap='call'><image src='{{call}}'></image></view>
+  <view bindtap='zaixian'><image src='{{zaixian}}'></image></view>
+  <view bindtap='huodong'><image src='{{huodong}}'></image></view>
+</view>

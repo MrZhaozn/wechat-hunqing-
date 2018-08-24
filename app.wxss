@@ -1,0 +1,58 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+#photo{
+  overflow: hidden;
+  width: 750rpx;
+}
+.item{
+  width: 372rpx;
+  height: 693rpx;
+  float: left;
+}
+.item:nth-of-type(2n){
+  margin-left: 6rpx;
+}
+.item_pic{
+  width: 100%;
+  height: 571rpx;
+}
+.item_pic image{
+  width: 100%;
+  height: 100%;
+}
+.item_date{
+  margin-top: 23rpx;
+  margin-bottom: 7rpx;
+  font-size: 19rpx;
+  color: black;
+  padding-left: 14rpx;
+}
+.item_content{
+  font-size: 21rpx;
+  color: #6d6d6d;
+  padding-left: 14rpx;
+}
+#gongneng{
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+#gongneng view{
+  width: 250rpx;
+  height: 100%;
+}
+#gongneng view image{
+  width: 100%;
+  height: 100%;
+}
